@@ -35,8 +35,11 @@ function validateCell(){
     return cellNum.length == 9 && !( new RegExp("[^\s0-9]").test(cellNum));
 }
 function validateSSN(){
-    var SSN = document.getElementById("SSN1").value + document.getElementById("SSN2").value + document.getElementById("SSN3").value;
-    return SSN.length == 10 && !( new RegExp("[^\s0-9]").test(SSN));
+    var SSN1 = document.getElementById("SSN1").value;
+    var SSN2 = document.getElementById("SSN2").value;
+    var SSN3 = document.getElementById("SSN3").value;
+    var SSN = SSN1 + SSN2 + SSN3;
+    return SSN1.length == 3 && SSN2.length == 6 && SSN3.length == 1 && !( new RegExp("[^\s0-9]").test(SSN));
 }
 function validatePassword(){
     var Password = document.getElementById("Password").value;
@@ -49,7 +52,7 @@ function validateConfirmation(){
     return validatePassword() && Password == confirmation;
 }
 function validateAddress(){
-	var address = document.getElementById("Address").value;
+    var address = document.getElementById("Address").value;
     return address.length <= 250 && isFarsi(address);
 }
 function validateDay(){
