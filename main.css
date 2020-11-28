@@ -1,0 +1,122 @@
+@font-face {
+    font-family: IRANSansWeb;
+    src: url("fonts/IRANSansWeb(FaNum).woff");
+}
+body{
+    font-family: IRANSansWeb, Tahoma;
+    background-color: #4E7851;
+}
+input {font-family: IRANSansWeb, Tahoma;}
+
+.main-form{
+    background-color: #9EBC99;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-form label:not([for="Single"]):not([for="Married"]){
+    width: 150px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.main-form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]){
+    width: 210px;
+    height: 30px;
+    margin-top: 15px;
+    font-family: IRANSansWeb;
+    font-size: 100%;
+}
+
+#h1{text-align: center;}
+
+#Gender{
+	font-family: IRANSansWeb;
+	width: 100px;
+	height: 30px;
+}
+
+#FullName{direction:LTR}
+
+#Email{
+	width: 300px;
+	direction: LTR;
+}
+
+#CellNum{
+	width: 193px;
+	direction: LTR;
+}
+
+#SSN1{width: 30px;direction: LTR;}
+#SSN2{width: 140px;direction: LTR;}
+#SSN3{width: 30px;direction: LTR;}
+
+#Password{direction: LTR;}
+#Confirmation{direction: LTR;}
+
+#Address{
+	width: 300px;
+	height: 110px;
+	font-family: IRANSansWeb;
+	
+}
+
+#Birthday{width: 40px;}
+#Birthmonth{width: 40px;}
+#Birthyear{width: 40px;}
+
+#Favorites{width: 230px;}
+
+#Submit{width:120px;}
+
+@media (max-width: 850px) {
+    .main-form{
+        width: 97%;
+    }
+
+    .main-form label{
+        width: 50px;
+		padding: 0;
+	}
+	
+	.main-form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]){
+        width: 150px;
+    }
+	
+	#Email{
+	width: 200px;
+	direction: LTR;
+}
+
+	#CellNum{
+		width: 150px;
+		direction: LTR;
+	}
+
+	#SSN1{width: 30px;direction: LTR;}
+	#SSN2{width: 100px;direction: LTR;}
+	#SSN3{width: 30px;direction: LTR;}
+	#Address{
+	width: 200px;
+	height: 110px;
+	font-family: IRANSansWeb;
+	
+	}
+	
+}
+
+@media (max-width: 1100px) and (min-width: 851px) {
+    .main-form{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1101px) {
+    .main-form{
+        width: 73%;
+    }
+}
+
+
+

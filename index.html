@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<title>ثبت اطلاعات کاربر</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+
+	<body>
+		<h1 id="h1">فرم ثبت اطلاعات</h1>
+		<form  class="main-form" method="post">
+			<p id="board"></p>
+			
+			<label for="Gender">جنسیت:</label>
+			<select id="Gender">
+				<option>...</option>
+				<option>آقا</option>
+				<option>خانم</option>
+				<option>غیره</option>
+			</select>
+			<br>
+			
+			<label for="FirstName">نام:</label>
+			<input id="FirstName" type="text">
+			<br>
+
+			<label for="LastName">نام خانوادگی:</label>
+			<input id="LastName" type="text">
+			<br>
+
+			<label for="FullName" style="font-size:85%">نام و نام خانوادگی انگلیسی:</label>
+			<input id="FullName" type="text">
+			<br>
+
+			<label for="Email">پست الکترونیکی:</label>
+			<input id="Email" type="Email">
+			<br>
+
+			<label for="CellNum">شماره تلفن همراه:</label>
+			<input id="CellNum" type="text">
+			<span id="CellNumSpan">09</span>
+			<br>
+
+			<label>کد ملی:</label>
+			<input id="SSN1" type="text">
+			<span>-</span>
+			<input id="SSN2" type="text">
+			<span>-</span>
+			<input id="SSN3" type="text">
+			<br>
+
+			<label for="Password">رمز عبور:</label>
+			<input id="Password" type="password">
+			<br>
+
+			<label for="Conirmation">تایید رمز عبور:</label>
+			<input id="Confirmation" type="password">
+			<br>
+
+			<label for="Address">آدرس:</label>
+			<textarea id="Address"></textarea>
+			<br>
+
+			<label>تاریخ تولد:</label>
+			<input id="Birthday" type="text" placeholder="روز" class="birth-field">
+			<span>/</span>
+			<input id="Birthmonth" type="text" placeholder="ماه" class="birth-field">
+			<span>/</span>
+			<input id="Birthyear" type="text" placeholder="سال" class="birth-field">
+			<br>
+
+			<label for="Marriage">وضعیت تأهل:</label>
+			<div id="Marriage" style="display: inline; margin-top: 2px;">
+				<label for="Single">متأهل</label>
+				<input id="Single" type="radio" name="Marriage">
+				<label for="Married">مجرد</label>
+				<input id="Married" type="radio" name="Marriage">
+			</div>
+			<br>
+			
+			<label for="Favorites">علاقه مندی ها:</label>
+				<fieldset id="Favorites">
+					<label for="Sports">ورزش</label>
+					<input id="Sports" type="checkbox" name="Favorites1">
+					<label for="ّMovies">فیلم</label>
+					<input id="ّMovies" type="checkbox" name="Favorites2">
+					<label for="Music">موسیقی</label>
+					<input id="Music" type="checkbox" name="Favorites3">
+					<label for="Games">بازی</label>
+					<input id="Games" type="checkbox" name="Favorites4">
+				</fieldset>
+			<br>
+			<div style="text-align:center">
+			<input id="Submit" type="submit" value="ارسال" onclick="return Validator();" >
+			</div>
+			<br>
+		</form>
+	</body>
+</html>
